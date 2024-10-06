@@ -8,7 +8,7 @@ import { AuthProvider } from "./context/AuthContext.tsx";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
 
-axios.defaults.baseURL = "http://localhost:3000/api/v1";
+axios.defaults.baseURL = "http://Tejix-backend.vercel.app/api/v1";
 axios.defaults.withCredentials = true;
 
 const theme = createTheme({
@@ -22,7 +22,7 @@ createRoot(document.getElementById("root")!).render(
     <AuthProvider>
       <BrowserRouter>
         <ThemeProvider theme={theme}>
-          <Toaster position="top-right"/>
+          <Toaster position="top-center"/>
           <App />
         </ThemeProvider>
       </BrowserRouter>
